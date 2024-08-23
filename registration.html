@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: skyblue;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: skyblue;
+            color: white;
+            padding: 10px 0;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"]:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form action="https://example.com/register" method="post">
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" name="username" required>
+            
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
